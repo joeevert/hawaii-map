@@ -3,4 +3,43 @@
   background-image: url(../img/map_background.jpg);
   background-size: cover;
   background-position: top;
+  position: relative;
+  &__overlay {
+    width: auto;
+    height: 100vh;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+  }
+  &__image {
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // z-index: 100;
+  }
+  &__outlines {
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.mapify-svg {
+  height: 100%;
+  fill: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// outline fills
+.cls-1 {
+  fill: rgba(255, 255, 255, .25);
 }
